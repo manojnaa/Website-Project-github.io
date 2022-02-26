@@ -1,6 +1,7 @@
 <!doctype html>
 <title>Who Am I?</title>
 <style>
+//div {border: thin dotted black;}
 * {
   box-sizing: border-box;
 }
@@ -10,19 +11,19 @@ body {
   flex-direction: column;
   margin: 0;
 }
-#main {
+.main {
   display: flex;
   flex: 1;
 }
-#main > article {
+.main > article {
   flex: 1;
 }
-#main > nav,
-#main > aside {
+.main > nav,
+.main > aside {
   flex: 0 0 20vw;
   background: beige;
 }
-#main > nav {
+.main > nav {
   order: -1;
 }
 header, footer {
