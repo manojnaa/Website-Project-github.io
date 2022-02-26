@@ -1,88 +1,66 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <meta name="author"content="Fatima Omar">
-  <meta name="description" content= "Portfoilio of Fatima Omar">
-  <meta name="viewport" content="yes"
-    <meta name="keywords" content="Portfoilio,Fatima Omar,Introduction,About Fatima Omar">
-<link rel="styelsheet"href="index.php"
-
-    <title> Who am I</title>
-    <link rel="icon" type="Images /Screen Shot 2022-02-25 at 2.10.37 AM.png" href="https://i.pinimg.com/564x/0d/8e/85/0d8e85d0d746841b719b499b90f4ff2f.jpg">
-    <style>
-
-      div {border:thin line black;}
-      * {
-        box-sizing: border-box;
-     }
-     .header{
-       border:3px solid black;
-     }
-
-     .menu{
-       width:27%;
-       float:left;
-       padding:15px;
-       border:3px solid black;
-     }
-
-     .main{
-    width:73%;
-    float:right;
-    padding:17px;
-    border:0px solid black;}
-
-    body{
-      background-image: url('https://i.pinimg.com/564x/e6/81/bd/e681bd946fce990bd5a5b5b6eaa42d0b.jpg');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
-    }
-  </style>
-</head>
-
+<!doctype html>
+<title>Who Am I?</title>
+<style>
+//div {border: thin dotted black;}
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+.main {
+  display: flex;
+  flex: 1;
+}
+.main > article {
+  flex: 1;
+}
+.main > nav,
+.main > aside {
+  flex: 0 0 20vw;
+  background: beige;
+}
+.main > nav {
+  order: -1;
+}
+header, footer {
+  background: yellowgreen;
+  height: 20vh;
+}
+header, footer, article, nav, aside {
+  padding: 1em;
+}
+</style>
 <body>
-  <header class="header" style="font-size:4.5vw">Welcome to the Portfoilio of Fatima Omar</header>
-  <section class="main"style="font-size: 3.5vw"> <em> Introduction:</em>
-    <img src="https://thebudgeterashopperph.files.wordpress.com/2017/08/gif.gif"alt="Images /gif.gif" title="Welcome:)"style="max-width:45%;height:auto">
-
-    <article class="main">
-      <p style="font-class:0.5vw"> Welcome to my website,I am Fatima Omar  and this will be a Portfilo about Me. I will be talking my Life story and My overall Identity also things that I care about and think should have more attention to.</p>
-    </article class="main">
-  </section class ="main">
-
-  <aside class ="menu">
-    <p style="font-size:2.5vw"> Table of Contents</p>
-    <ul>
-      <li style="font-size:2.5vw"> <b> Learn About </b>
-        <li style="font-size: 1.9vw"><em> <a href="childpages /childtemplate.html" target="_blank"> My Childhoood  </a></em>
-          <li style="font-size: 1.9vw"> <em> <a href="childpages /childtemplate.html" target="_blank"> My Aciehments </a></em>
-            <li style="font-size: 1.9vw"> <em> <a href="childpages /childtemplate.html" target="_blank">  My Funny Stories </a></em>
-              <li style="font-size:2.3vw"><b> What I care about  </b>
-                <li style="font-size:1.9vw"><em>  <a href="childpages /WhatIcareAbout.html" target="_blank">Enviroment </a> </em>
-                  <li style="font-size:2.5vw"><b> My Identity </b>
-                    <li style="font-size:1.9vw">
-                    </ul>
-
-                    <audio controls autoplay >
-                      <source src="Media/406_full_favorite-moments_0141_preview.mp3" type="audio/mpeg">
-                      </audio>
-                    </aside class="menu">
-<div class="comment box">
-  <h2>comments</h2>
-  <form action="0"
-  <input type="text" name"full_name" placeholder"Full Name">
-  <textarea name="index.php" placeholder="Type your comment"></textarea>
-<button type="submit"> submit comment</button>
-</form>
-</div>
-
-
-
-                  </body>
-                  <footer>
-                      <p>&copy Fatima Omar , powered by fomar54 in Github </p>
-                      <img src="https://raw.githubusercontent.com/fomar54/webpage-gitub.io/main/Images%20/WELLCOME.gif"alt="Images /WELLCOME.gif" title="Logo"style="max-width:12%;height:auto">
-                  </footer>
-                  </html>
+  <header>
+    <h1 style="font-size:5.5vw">Manojna...just who is she?</h1>
+  </header>
+  <div id="main">
+    <article>
+      <p style="font-size:3vw">Click on some of the links below to jump right in!</p>
+      <!-- See the HTML .txt document for a summary-->
+      <ol>
+       <li style="font-size:2vw"> What She Expects For The Future: <a href="childPages\What She Expects For The Future.html" target="_blank">Click Me :)</a>
+       <li style="font-size:2vw"> What her Ethnicity Is: <a href="childPages\What Her Enthnicity Is.html" target="_blank">Click Me :)</a>
+       <li style="font-size:2vw"> Fun Facts About Her: <a href="childPages/template.html" target="_blank">Click Me :)</a>
+       <li style="font-size:2vw"> What Her Regular Life is Like: <a href="childPages/Headings and Paragraph Tags.html" target="_blank">Click Me :)</a>
+       <li style="font-size:2vw"> What School She Goes To: <a href="childPages/Subscript and Superscript Tags.html" target="_blank">Click Me :)</a>
+       <li style="font-size:2vw"> Her Favorite Animals: <a href="childPages/Image Lesson.html" target="_blank">Click Me :)</a>
+      </ol>
+    </article>
+    <nav>WARNING: SHE IS BORING</nav>
+    <aside>WARNING: SHE IS BORING</aside>
+  </div>
+  <footer><blockquote cite="https://www.goodreads.com/author/show/3565.Oscar_Wilde"><!-- Date Accessed 20220208--></blockquote>
+<p>
+  <strong>Be yourself; everyone else is already taken.</strong>
+  <em>- <a href="https://www.goodreads.com/author/show/3565.Oscar_Wilde" target="_blank">Oscar Wilde</a></em>
+</p>
+<p>&copy Manojna Tumma, powered by manojnaa in GitHub</p>
+</footer>
+</footer>
+</body>
+</html>
