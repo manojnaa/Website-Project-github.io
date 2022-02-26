@@ -1,70 +1,58 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <!-- Used by Key Board-->
-    <meta charset="utf-8">
-
-    <title>What She Expects From The Future</title>
-
-    <!-- Used by Google Search -->
-     <meta name="author" content="Manojna Tumma">
-     <meta name="description" content="What She Expects For The Future">
-     <meta name="keywords" content="yes">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Content give value for name or http-equiv attribute, text entry in string or array string -->
-
-    <!-- meta http-equiv="default-style" content=""--> <!-- content matches css link exactly-->
-
-    <!-- Other meta attributes to be aware of -->
-
-    <!-- meta http-equiv="refresh" content="30"-->
-    <!-- Content forces a Internet Request to refresh webpage every "time value in seconds" -->
-    <!-- Use this when refreshes are needed -->
-
-    <!-- meta http-equiv="content-type" content="text/html; charset=UTF-8" -->
-    <!-- Already specified in the charset above-->
-
-    <style>
-      //div {border: thin dotted black;}
-      * {
-        box-sizing: border-box;
-      }
-      .header {
-        border: 1px solid black;
-      }
-      .menu {
-        width: 25%;
-        float: left;
-        padding: 15px;
-        border: 1px solid black;
-      }
-      .main {
-        width: 75%;
-        float: left;
-        padding: 15px;
-        border: 1px solid black;
-      }
-    </style>
-
-  </head>
-  <body>
-    <style="background-color:#9775B8"></style>
-   <div><header class="header">What She Expects From The Future</header></div>
-   <div><aside class="header"><p>I dream of becoming a Cardiologist. I've always wanted to become a doctor when I was younger, but now time is coming for me to make that dream a relaity.
-      I study really hard and I put a lot of effort into whatever I'm doing. For the future, I've planned out my next couple years and I'm hoping that nothing comes in the way and changes a couple plans.
+<!doctype html>
+<title>Who Am I?</title>
+<style>
+//div {border: thin dotted black;}
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+.main {
+  display: flex;
+  flex: 1;
+}
+.main > article {
+  flex: 1;
+}
+.main > nav,
+.main > aside {
+  flex: 0 0 20vw;
+  background: gray;
+}
+.main > nav {
+  order: -1;
+}
+header, footer {
+  background: purple;
+  height: 20vh;
+}
+header, footer, article, nav, aside {
+  padding: 1em;
+}
+</style>
+<body>
+  <header>
+    <h1 style="font-size:5vw">What She Expects From The Future:</h1>
+  </header>
+  <div id="main">
+    <article>
+      <p style="font-size:2.5vw">I dream of becoming a Cardiologist. I've always wanted to become a doctor when I was younger, but now time is coming for me to make that dream a reality.</p>
+  <p style="font-size:1.5vw"> I study really hard and I put a lot of effort into whatever I'm doing. For the future, I've planned out my next couple years and I'm hoping that nothing comes in the way and changes a couple plans.
       1. Finish high school with honours. So far I got the bag secrued for grade 10, just pushing hard for grade 11 and 12. 2. Go straight into university and not take any breaks and get my science degree.
-      3. Pass the MCAT and work hard through medical school. 4. Finish residency and graduate as an offical doctor. 5. Save up and spoil my family for all of their support.</p></aside></div>
-   <div><nav class="menu"><h3>These are my top priority goals.</h3></nav></div>
-   <div><section class="main"> <h3 style="font-size:1.5vw">The Dreams Of The Future</h3>
-     <aside> <p>In the future, I aspire on going into the medical feild, and potentially become a doctor.</p></aside>
-  </body>
-    <style="background-color:#BF7DFD;"></style>
-  <footer>
-    <blockquote cite="https://www.goodreads.com/author/show/3565.Oscar_Wilde"><!-- Date Accessed 20220208--></blockquote>
-    <p>
-      <strong>Be yourself; everyone else is already taken.</strong>
-      <em>- <a href="https://www.goodreads.com/author/show/3565.Oscar_Wilde" target="_blank">Oscar Wilde</a></em>
-    </p>
-    <p>&copy Manojna Tumma, powered by manojnaa in GitHub</p>
-  </footer>
+      3. Pass the MCAT and work hard through medical school. 4. Finish residency and graduate as an offical doctor. 5. Save up and spoil my family for all of their support.</p>
+    </article>
+    <nav>In 5 years from now, I see myself accomplishing my goals.</nav>
+  </div>
+  <footer><blockquote cite="https://www.goodreads.com/author/show/3565.Oscar_Wilde"><!-- Date Accessed 20220208--></blockquote>
+<p>
+  <strong>Be yourself; everyone else is already taken.</strong>
+  <em>- <a href="https://www.goodreads.com/author/show/3565.Oscar_Wilde" target="_blank">Oscar Wilde</a></em>
+</p>
+<p>&copy Manojna Tumma, powered by manojnaa in GitHub</p>
+</footer>
+</body>
 </html>
