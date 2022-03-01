@@ -1,76 +1,133 @@
-<!doctype html>
-<title>Who Am I?</title>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-//div {border: thin dotted black;}
 * {
   box-sizing: border-box;
 }
+
+/* Add a gray background color with some padding */
 body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  margin: 0;
+  font-family: 'Sofia';font-size: 22px;
+  padding: 20px;
+  background: #E29F9F;
 }
-.main {
-  display: flex;
-  flex: 1;
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: #E08686;
 }
-.main > article {
-  flex: 1;
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 55%;
 }
-.main > nav,
-.main > aside {
-  flex: 0 0 20vw;
-  background: gray;
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 45%;
+  padding-left: 20px;
 }
-.main > nav {
-  order: -1;
+
+/* Fake image */
+.fakeimg {
+  background-color: #CEECDF;
+  width: 100%;
+  padding: 20px;
 }
-header, footer {
-  background: lightcoral;
-  height: 20vh;
+
+/* Add a card effect for articles */
+.card {
+   background-color: #E08686;
+   padding: 20px;
+   margin-top: 20px;
 }
-header, footer, article, nav, aside {
-  padding: 1em;
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #E08686;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
 }
 </style>
+</head>
 <body>
-  <header>
-    <h1 style="font-size:5vw">Fun Facts About Her:</h1>
-  </header>
 
+<div class="header">
+<marquee behavior="alternate">Fun Facts About Her:</marquee>
+</div>
 
-  <div id="main">
-    <article>
-      <p style="font-size:3vw">I know I'm boring, but I do got some "fun" inside me :)</p>
-  <p style="font-size:2.5vw">
-I love drawing. I love music, my taste in music changes a lot. At the moment I'm into the reverbed versions of songs, rock, a lil rap and some spanish mixes. I love anime, so far my favorite I've watched has to be Naruto. 10/10 recommend. The video below is one of the main (my fav) characters. I go to W.P. Wagner High School, but I haven't gone in person to the school yet. I've been online in March, when I was in grade nine to now, grade 11. I honestly prefer online to in person schooling. I got so much more time, lot more sleep and no distractions. But I do miss in person learning. I play volleyball, badminton and cricket. I hate black pepper with a passion.
-  </p>
-
- <p style="font-size:2.5vw">I love Science, Biology, Chemistry and Language Arts. I also execl really well in them too, like my grades are so beautiful in them, it brings tears of joy to my eyes. But Math and Physics can leave, yup not invited here, sorry not sorry. It rages me with so many letters and numbers and word problems, man I could just go on and on why I despise them so much, ugh. Like who even likes a+b=c?! Just looking at that makes me gag. But surpriseingly, I am still keeping the borderline A in those subjects. Before, I used to hate Social Stuides, I always found politics and history so boring, but now, I'm starting to have a liking towards that. I find it so interesting, like it's super weird why I am starting to like it, I used to be so against it. I also love reading. But I hate reading comprehension exams. I put so much effort into my grades and all of my homework. I push myself to limits which I wouldn't have known about in the past, I'm glad I am. But unfortuneatly, I also procrastinate a bit too much, still get my work done on time, so it's a win-stress-rage-regret-win cycle/situation.
-      </p>
-
- <p style="font-size:2.5vw">
-   I have been super boring, but please, do enjoy some funny videos down below!! :)
-      </p>
- </article>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <p>I love drawing. I love music, my taste in music changes a lot. At the moment I'm into the reverbed versions of songs, rock, a lil rap and some spanish mixes. I love anime, so far my favorite I've watched has to be Naruto. 10/10 recommend. The video below is one of the main (my fav) characters. I honestly prefer online to in person schooling. I got so much more time, lot more sleep and no distractions. But I do miss in person learning. I play volleyball, badminton and cricket. I hate black pepper with a passion. I will despise you if you give me black pepper. But if it was an accident, I'll still be mad, but a little less mad haha! The video below is some characters from Naruto dancing :)</p>
+   <iframe width="885" height="300" src="https://www.youtube.com/embed/mlsk7qIAuxo?start=13" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p> I love Science, Biology, Chemistry and Language Arts. I also execl really well in them too, like my grades are so beautiful in them, it brings tears of joy to my eyes. But Math and Physics can leave, yup not invited here, sorry not sorry. It rages me with so many letters and numbers and word problems, man I could just go on and on why I despise them so much, ugh. Like who even likes a+b=c?! Just looking at that makes me gag. But surpriseingly, I am still keeping the borderline A in those subjects. Before, I used to hate Social Stuides, I always found politics and history so boring, but now, I'm starting to have a liking towards that. The video below describes my fury for math and physics. :)</p>
+      <iframe width="885" height="300" src="https://www.youtube.com/embed/TMcMtg0zGgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>I find it so interesting, like it's super weird why I am starting to like it, I used to be so against it. I also love reading. But I hate reading comprehension exams. I put so much effort into my grades and all of my homework. I push myself to limits which I wouldn't have known about in the past, I'm glad I am. But unfortuneatly, I also procrastinate a bit too much, still get my work done on time, so it's a win-stress-rage-regret-win cycle/situation.</p>
+    </div>
   </div>
-
-
-    <section><article></article></section>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hbyZQWOY144" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pc8-8KfIW5c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rEybR8AcdqM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fJWsCaYo9W0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mbfiE40az_0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <footer><blockquote cite="https://www.youtube.com/embed/rEybR8AcdqM"><!-- Date Accessed 2022602--></blockquote>
+  <div class="rightcolumn">
+    <div class="card">
+      <p>I have been super boring, but please, do enjoy some funny videos down below!! :)</p>
+      <iframe width="690" height="200" src="https://www.youtube.com/embed/hbyZQWOY144" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="690" height="200" src="https://www.youtube.com/embed/pc8-8KfIW5c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="690" height="200" src="https://www.youtube.com/embed/rEybR8AcdqM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="690" height="200" src="https://www.youtube.com/embed/fJWsCaYo9W0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="690" height="200" src="https://www.youtube.com/embed/mbfiE40az_0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+      <footer><blockquote cite="https://www.youtube.com/embed/rEybR8AcdqM"><!-- Date Accessed 2022602--></blockquote>
   <footer><blockquote cite="https://www.youtube.com/embed/hbyZQWOY144"><!-- Date Accessed 2022602--></blockquote>
   <footer><blockquote cite="https://www.youtube.com/embed/pc8-8KfIW5c"><!-- Date Accessed 2022602--></blockquote>
   <footer><blockquote cite="https://www.youtube.com/embed/fJWsCaYo9W0"><!-- Date Accessed 2022602--></blockquote>
   <footer><blockquote cite="https://www.youtube.com/embed/mbfiE40az_0"><!-- Date Accessed 2022602--></blockquote>
-
   <footer><blockquote cite="https://www.goodreads.com/author/show/3565.Oscar_Wilde"><!-- Date Accessed 20220208--></blockquote>
+
+    <div class="card">
+      <h3>Where you can find me:</h3>
+      <p>@manojnaa.__ (instagram)
+      @manojnaa (github)
+      @manojna#9289 (discord)</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+<footer><blockquote cite="https://www.youtube.com/embed/TWtzof_54mo?start=73"><!-- Date Accessed 20220208-->
+  </blockquote>
+  <footer><blockquote cite="https://www.youtube.com/embed/btAtM2WhqR0?start=73"><!-- Date Accessed 20220208-->
+  </blockquote>
+  <footer><blockquote cite="https://www.goodreads.com/author/show/3565.Oscar_Wilde"><!-- Date Accessed 20220208-->
+  </blockquote>
+  <footer><blockquote cite="https://www.youtube.com/embed/CClPiKBzqJg"><!-- Date Accessed 2022602--></blockquote>
+  <footer><blockquote cite="https://commons.wikimedia.org/wiki/File:Holy_bible_book.jpg"><!-- Date Accessed 2022602--></blockquote>
+  <footer><blockquote cite="https://www.stockunlimited.com/image/praying-gesture_1863322.html"><!-- Date Accessed 2022602--></blockquote>
+
+
+
 <p>
   <strong>Be yourself; everyone else is already taken.</strong>
   <em>- <a href="https://www.goodreads.com/author/show/3565.Oscar_Wilde" target="_blank">Oscar Wilde</a></em>
