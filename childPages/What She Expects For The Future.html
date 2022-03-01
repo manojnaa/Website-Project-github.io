@@ -1,57 +1,115 @@
-<!doctype html>
-<title>Who Am I?</title>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-//div {border: thin dotted black;}
 * {
   box-sizing: border-box;
 }
+
+/* Add a gray background color with some padding */
 body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  margin: 0;
+  font-family: 'Sofia';font-size: 22px;
+  padding: 20px;
+  background: #E8D7C6;
 }
-.main {
-  display: flex;
-  flex: 1;
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: #E0C8B0;
 }
-.main > article {
-  flex: 1;
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 55%;
 }
-.main > nav,
-.main > aside {
-  flex: 0 0 20vw;
-  background: gray;
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 45%;
+  padding-left: 20px;
 }
-.main > nav {
-  order: -1;
+
+/* Fake image */
+.fakeimg {
+  background-color: #E0C8B0;
+  width: 100%;
+  padding: 20px;
 }
-header, footer {
-  background: purple;
-  height: 20vh;
+
+/* Add a card effect for articles */
+.card {
+   background-color: #E0C8B0;
+   padding: 20px;
+   margin-top: 20px;
 }
-header, footer, article, nav, aside {
-  padding: 1em;
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #E0C8B0;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
 }
 </style>
+</head>
 <body>
-  <header>
-    <h1 style="font-size:5vw">What She Expects From The Future:</h1>
-  </header>
-  <div id="main">
-    <article>
-      <p style="font-size:2.5vw">I dream of becoming a Cardiologist. I've always wanted to become a doctor when I was younger, but now time is coming for me to make that dream a reality.</p>
-  <p style="font-size:1.5vw"> I study really hard and I put a lot of effort into whatever I'm doing. For the future, I've planned out my next couple years and I'm hoping that nothing comes in the way and changes a couple plans.
+
+<div class="header">
+  <marquee behavior="alternate">What She Expects From The Future:</marquee>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <iframe width="385" height="200" src="https://www.youtube.com/embed/QK7UP_JFxG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p> PLEASE CLICK THE PLAY BUTTON TO THE VIDEO ABOVE BEFORE YOU START READING! IT SOUNDS AWESOME!! I dream of becoming a Cardiologist. I've always wanted to become a doctor when I was younger, but now time is coming for me to make that dream a reality. The video below is about a day in a life of a Cardiologist, it's so impressive!</p>
+    <iframe width="385" height="200" src="https://www.youtube.com/embed/5mg7E0iF99Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <p>I study really hard and I put a lot of effort into whatever I'm doing. For the future, I've planned out my next couple years and I'm hoping that nothing comes in the way and changes a couple plans.
       1. Finish high school with honours. So far I got the bag secrued for grade 10, just pushing hard for grade 11 and 12. 2. Go straight into university and not take any breaks and get my science degree.
       3. Pass the MCAT and work hard through medical school. 4. Finish residency and graduate as an offical doctor. 5. Save up and spoil my family for all of their support.</p>
-    </article>
-    <nav><p style="font-size:1.5vw">In 5 years from now, I see myself accomplishing my goals.</nav></p>
+    </div>
   </div>
-    <section><article></article></section>
-      <br><br><img src="https://commons.wikimedia.org/wiki/File:Stethoscope.jpg" alt="Images/450px-Stethoscope.jpg" title="Doctor of the Future" width="300" height="300">
+  <div class="rightcolumn">
+    <div class="card">
+      <p>In 5 years from now, I see myself accomplishing my goals. I don't have a plan b. I know the road is going to be super duper hard, but I know that when I come to my destination, all the years of stress and endless hardwork will forsure pay off. It can be pretty stressfull to think so ahead into the future and have so many doubts eithin each step I take. But I am trying my hardest and I can only look forward, keep my head held high and fight through the struggles!</p>
+  <iframe width="285" height="200" src="https://www.youtube.com/embed/st6R08flASk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>The video above, is one of my favortie instrumental music videos. I listen to it a lot when I'm feeling pretty overwhemled. I just close my eyes and just let the music and harmony take me on its journey.</p>
+    </div>
+    <div class="card">
+      <h3>Where you can find me:</h3>
+      <p>@manojnaa.__ (instagram)
+      @manojnaa (github)
+      @manojna#9289 (discord)</p>
+    </div>
+  </div>
+</div>
 
-  <footer><blockquote cite="https://commons.wikimedia.org/wiki/File:Stethoscope.jpg"><!-- Date Accessed 2022602--></blockquote>
-</section>
+<div class="footer">
+  <footer><blockquote cite="https://www.youtube.com/embed/st6R08flASk"><!-- Date Accessed 2022602--></blockquote>
+  <footer><blockquote cite="https://www.youtube.com/embed/5mg7E0iF99Y"><!-- Date Accessed 2022602--></blockquote>
+    <footer><blockquote cite="https://www.youtube.com/embed/QK7UP_JFxG8"><!-- Date Accessed 2022602--></blockquote>
   <footer><blockquote cite="https://www.goodreads.com/author/show/3565.Oscar_Wilde"><!-- Date Accessed 20220208--></blockquote>
 <p>
   <strong>Be yourself; everyone else is already taken.</strong>
