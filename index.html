@@ -1,57 +1,116 @@
-<!doctype html>
-<title>Who Am I?</title>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-//div {border: thin dotted black;}
 * {
   box-sizing: border-box;
 }
+
+/* Add a gray background color with some padding */
 body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  margin: 0;
+  font-family: 'Sofia';font-size: 22px;
+  padding: 20px;
+  background: #E8E6FF;
 }
-.main {
-  display: flex;
-  flex: 1;
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: #CDCBFD;
 }
-.main > article {
-  flex: 1;
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 55%;
 }
-.main > nav,
-.main > aside {
-  flex: 0 0 20vw;
-  background: beige;
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 45%;
+  padding-left: 20px;
 }
-.main > nav {
-  order: -1;
+
+/* Fake image */
+.fakeimg {
+  background-color: #D8D6FF;
+  width: 100%;
+  padding: 20px;
 }
-header, footer {
-  background: yellowgreen;
-  height: 20vh;
+
+/* Add a card effect for articles */
+.card {
+   background-color: #CDCBFD;
+   padding: 20px;
+   margin-top: 20px;
 }
-header, footer, article, nav, aside {
-  padding: 1em;
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #CDCBFD;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
 }
 </style>
+</head>
 <body>
-  <header>
-    <h1 style="font-size:5vw">Manojna...just who is she?</h1>
-  </header>
-  <div id="main">
-    <article>
-      <p style="font-size:3vw">Click on some of the links below to jump right in!</p>
-      <!-- See the HTML .txt document for a summary-->
-      <ol>
-       <li style="font-size:2vw"> What She Expects For The Future: <a href="childPages\What She Expects For The Future.html" target="_blank">Click Me :)</a>
-       <li style="font-size:2vw"> What her Ethnicity Is: <a href="childPages\What Her Enthnicity Is.html" target="_blank">Click Me :)</a>
-       <li style="font-size:2vw"> Memory Dump: <a href="childPages\Memory Dump.html" target="_blank">Click Me :)</a>
-       <li style="font-size:2vw"> Fun Facts About Her: <a href="childPages\Fun Facts About Her.html" target="_blank">Click Me :)</a>
+
+<div class="header">
+  <h2>Manojna...just who is she?</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Click on the links below to know more about her!</h2>
+  <ol>
+       <li style="font-size:3vw"> What She Expects For The Future: <a href="childPages\What She Expects For The Future.html" target="_blank">Click Me :)</a>
+       <li style="font-size:3vw"> What her Ethnicity Is: <a href="childPages\What Her Enthnicity Is.html" target="_blank">Click Me :)</a>
+       <li style="font-size:3vw"> Memory Dump: <a href="childPages\Memory Dump.html" target="_blank">Click Me :)</a>
+       <li style="font-size:3vw"> Fun Facts About Her: <a href="childPages\Fun Facts About Her.html" target="_blank">Click Me :)</a>
       </ol>
-    </article>
-    <nav>WARNING: SHE IS BORING</nav>
+      <p>WARNING: SHE IS BORING</p>
+        <br><br><img src="IMG-9639.jpg" alt="../Images/IMG-9639.jpg" title="That's Me!" style="width:100%;height:auto">
+    </div>
   </div>
-  <footer><blockquote cite="https://www.goodreads.com/author/show/3565.Oscar_Wilde"><!-- Date Accessed 20220208--></blockquote>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>A Little Bit About Me!</h2>
+      <p>Hey there! I'm Manojna Tumma, call me Manojna! I go to W.P. Wagner High School, well, I "go" to it. I've been online since quartine started. I love the colours purple and blue. I'm 16 years old and I'm just like your regular boring teenager, expect, I'm even more boring. But, with that said...welcome! I hope you have a good time looking around!</p>
+    </div>
+
+    <div class="card">
+      <h3>Where you can find me:</h3>
+      <p>@manojnaa.__ (instagram)
+      @manojnaa (github)
+      @manojna#9289 (discord)</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+<footer><blockquote cite="https://www.goodreads.com/author/show/3565.Oscar_Wilde"><!-- Date Accessed 20220208--></blockquote>
 <p>
   <strong>Be yourself; everyone else is already taken.</strong>
   <em>- <a href="https://www.goodreads.com/author/show/3565.Oscar_Wilde" target="_blank">Oscar Wilde</a></em>
