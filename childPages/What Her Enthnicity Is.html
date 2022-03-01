@@ -1,75 +1,125 @@
-<!doctype html>
-<title>Who Am I?</title>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-//div {border: thin dotted black;}
 * {
   box-sizing: border-box;
 }
+
+/* Add a gray background color with some padding */
 body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  margin: 0;
+  font-family: 'Sofia';font-size: 22px;
+  padding: 20px;
+  background: #AECDF1;
 }
-.main {
-  display: flex;
-  flex: 1;
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: #9EC0E9;
 }
-.main > article {
-  flex: 1;
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 55%;
 }
-.main > nav,
-.main > aside {
-  flex: 0 0 20vw;
-  background: gray;
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 45%;
+  padding-left: 20px;
 }
-.main > nav {
-  order: -1;
+
+/* Fake image */
+.fakeimg {
+  background-color: #9EC0E9;
+  width: 100%;
+  padding: 20px;
 }
-header, footer {
-  background: pink;
-  height: 20vh;
+
+/* Add a card effect for articles */
+.card {
+   background-color: #9EC0E9;
+   padding: 20px;
+   margin-top: 20px;
 }
-header, footer, article, nav, aside {
-  padding: 1em;
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #9EC0E9;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
 }
 </style>
+</head>
 <body>
-  <header>
-    <h1 style="font-size:5vw">What Her Enthnicity Is:</h1>
-  </header>
 
+<div class="header">
+  <h2>What Her Enthnicity Is:</h2>
+</div>
 
-  <div id="main">
-    <article>
-      <p style="font-size:3vw">I am born and from India, but also have my Canadian citizenship. So I'm both Indian and Canadian</p>
-  <p style="font-size:2.5vw">My name is Manojna Tumma, I go by Manojna. This writing in my language says my name.(మనోజ్ఞ)
-     My favorite Indian food has to be Birianyi. I was born in Visakhapatnam, India. My mother tongue is Telugu. The writing in my language says "I speak Telugu." నేను తెలుగు మాట్లాడతాను. I speak Telugu at home and English and French at school.
-     I can also speak a little French and Spanish. I can understand Tamil a little as well. My ethnicity/religion is Chistian.
-     There are a lot of sweets I love as well, I don't have a favortive because my sweet tooth loves them all. Some of the holidays I celebrate are Easter and Christmas. I don't celetebrate
-     most of the Indian festivals because they are Hindu. But my favorite that I do celebrate has to be Raksha Bandhan (Raki). Its a special day for the bond of a brother and a sister.</p>
-    </article>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>I am born and from India, but also have my Canadian citizenship. So I'm both Indian and Canadian</h2>
+    <br><br><img src="https://www.gatewayhouse.in/wp-content/uploads/2020/12/shutterstock_1443940382.jpg" alt="../Images/shutterstock_1443940382.jpg" title="My Nationalities" style="width:100%;height:auto">
+      <p>I am super proud of my roots, there is so much meaning and culture from where I'm from. My favortie part of my culture is all the wonderful traditions and cultural practices that I follow. My favorite celebration has to be Raksha Bandhan. It's a special day to celebrate the bond and love between brothers and sister. Even if one doesn't have a brother/sister, you can still celebrate it with your sibling! It doesn't have to be the sibling of the same blood too! The video below is a great representation! The one below that is a story moral in my language, but there are English subtitles!</p>
+    <iframe width="385" height="250" src="https://www.youtube.com/embed/-XlKhy9zDOI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="385" height="250" src="https://www.youtube.com/embed/GerNIBM4CoU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
   </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <p>This writing in my language says my name.(మనోజ్ఞ)
+     My favorite Indian food has to be Birianyi.</p>
+       <br><br><img src="https://commons.wikimedia.org/wiki/File:Hyderabadi_Chicken_Biryani.jpg" alt="../Images/Hyderabadi_Chicken_Biryani.jpg" title="My Favorite Food" style="width:100%;height:auto">
 
+        <p>I was born in Visakhapatnam, India. My mother tongue is Telugu. The writing in my language says "I speak Telugu." నేను తెలుగు మాట్లాడతాను. I speak Telugu at home and English and French at school.
+     I can also speak a little French and Spanish. I can understand Tamil a little as well. My ethnicity/religion is Chistian. There are a lot of sweets I love as well, I don't have a favortive because my sweet tooth loves them all. Some of the holidays I celebrate are Easter and Christmas. I don't celetebrate a lot of the Indian festivals because they are Hindu.</p>
+      <iframe width="300" height="300" src="https://www.youtube.com/embed/F57Eu92F-tY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 
-    <section><article></article></section>
-      <br><br><img src="https://www.gatewayhouse.in/wp-content/uploads/2020/12/shutterstock_1443940382.jpg" alt="../Images/shutterstock_1443940382.jpg" title="My Nationalities" style="width:100%;height:auto">
-      <br><br><img src="https://commons.wikimedia.org/wiki/File:Hyderabadi_Chicken_Biryani.jpg" alt="../Images/Hyderabadi_Chicken_Biryani.jpg" title="My Favorite Food" style="width:100%;height:auto">
+    <div class="card">
+      <h3>Where you can find me:</h3>
+      <p>@manojnaa.__ (instagram)
+      @manojnaa (github)
+      @manojna#9289 (discord)</p>
+    </div>
+  </div>
+</div>
 
-<footer><blockquote cite="https://www.youtube.com/embed/F57Eu92F-tY"><!-- Date Accessed 2022602--></blockquote>
+<div class="footer">
+<footer><blockquote cite="https://www.goodreads.com/author/show/3565.Oscar_Wilde"><!-- Date Accessed 20220208-->
+  </blockquote>
+  <footer><blockquote cite="https://www.youtube.com/embed/F57Eu92F-tY"><!-- Date Accessed 2022602--></blockquote>
 <footer><blockquote cite="https://www.youtube.com/embed/-XlKhy9zDOI"><!-- Date Accessed 2022602--></blockquote>
 <footer><blockquote cite="https://www.youtube.com/embed/GerNIBM4CoU"><!-- Date Accessed 2022602--></blockquote>
 <footer><blockquote cite="https://www.gatewayhouse.in/wp-content/uploads/2020/12/shutterstock_1443940382.jpg"><!-- Date Accessed 2022602--></blockquote>
 <footer><blockquote cite="https://commons.wikimedia.org/wiki/File:Hyderabadi_Chicken_Biryani.jpg"><!-- Date Accessed 2022602--></blockquote>
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/F57Eu92F-tY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-XlKhy9zDOI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/GerNIBM4CoU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</section>
-
-
-  <footer><blockquote cite="https://www.goodreads.com/author/show/3565.Oscar_Wilde"><!-- Date Accessed 20220208--></blockquote>
 <p>
   <strong>Be yourself; everyone else is already taken.</strong>
   <em>- <a href="https://www.goodreads.com/author/show/3565.Oscar_Wilde" target="_blank">Oscar Wilde</a></em>
